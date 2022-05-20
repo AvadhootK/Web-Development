@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        .header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+        }
+        .header2{
+            background-color: rgb(184, 82, 155);
+            color: white;
+            padding: 10px;
+            padding-left: 15px;
+        }
+        td{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .table1{
+            font-size: 20px;
+        }
+        .table2{
+            font-size: 13px;
+        }
+        .column{
+            float: left;
+            padding-right: 100px;
+        }
+        .header2::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .table3{
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        .b1 {
+            border: none;
+            background-color: none;
+            outline: none;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        .people{
+            margin-top: 50px;
+            font-size:30px;
+            font-weight: bold;
+            color: blueviolet;
+            background-color: transparent;
+            border: none;
+        }
+        .button1{
+            background-color: transparent;
+            width: 125px;
+            height: 70px;
+            text-align: left;
+            margin-right: 15px;
+            color: blueviolet;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .button1:hover{
+            background-color: rgb(241, 241, 243);
+        }
+        .table4{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .table4 td{
+            color: blueviolet;
+            font-size: 20px;
+            padding-right: 125px;
+        }
+        .table5{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .table5 td{
+            padding-right: 60px;
+        }
+        .active:active{
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body style="font-family:arial;font-size: 15px;">
+    <div class="header" display: inline-block;>
+        Traveler alert for SFO and DAL&nbsp&nbsp;
+        <a href="https://www.youtube.com/" style="color: white;text-decoration: underline;" target="_blank">More</a>
+    </div>
+    <div class="header2">
+        <div class="column">
+            <table>
+                <tr>
+                    <td style="border-right: 2px black solid;height: 20px;font-size: 17px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding-top: 10px;"><img alt="America"></td>
+                    <td class="table1"><a href="#" style="color: white;" ><b>Book</b></a></td>
+                    <td class="table1"><a href="#" style="color: white;" ><b>Check In</b></a></td>
+                    <td class="table1" style="border-right: 2px black solid;height: 20px;"><a href="#" style="color: white;" ><b>Manage</b></a></td>
+                    <td class="table2"><a href="#" style="color: white;" >Deals</a></td>
+                    <td class="table2"><a href="#" style="color: white;" >Flying With Us</a></td></td>
+                    <td class="table2"><a href="#" style="color: white;">Where We fly</a></td></td>
+                    <td class="table2"><a href="#" style="color: white;" >Fees</a></td></td>
+                    <td class="table2"><a href="#" style="color: white;" >Flight Status</a></td></td>
+                    <td class="table2"><a href="#" style="color: white;" >Flight Alerts</a></td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tr>
+                    <td class="table3" style="border-left: 2px black solid;height: 20px;font-size: 17px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><img alt="Elevate"></td>
+                    <td class="table3"><a href="#" style="color:white;" ><b>Sign Up</b></a></td>
+                    <td class="table3"><a href="#" style="color: white;" ><b>Sign In</b></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div display:inline-block>
+        <div style="text-align: center; margin-top: 25px;">
+            <input type="radio" id="r1" value="roundtrip" name="contact" checked>
+            <label for="r1">Round Trip</label>
+            <input type="radio" id="r2" value="oneway" name="contact">
+            <label for="r2">One Way</label>
+            <input type="radio" id="r3" value="multicity" name="contact">
+            <label for="r3">Multicity</label>
+            <hr width="30%">
+        </div>
+    </div>
+    <p>
+        <div style="text-align: center;" display:inline-block>
+            <label for="s1">
+                <select class="people" name="People" id="s1">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                </select>
+            </label>
+            <span style="font-size: 30px;">from</span>
+            <label for="s2">
+                <select class="people" name="City" id="s2">
+                    <option value="1">San Francisco</option>
+                    <option value="2">Chicago</option>
+                    <option value="3">Austin</option>
+                    <option value="4">Miami</option>
+                </select>
+            </label>
+            <span style="font-size: 30px;">to</span>
+        </div>
+        <div style="text-align: center;margin-top: 15px;" display:inline-block>
+            <input class="button1" type="button" id="b1" value="BOSTON">
+            <input class="button1" type="button" id="b2" value="LAS VEGAS">
+            <input class="button1" type="button" id="b3" value="LOS ANGELES">
+            <input class="button1" type="button" id="b4" value="NEW YORK">
+            <input class="button1" type="button" id="b5" value="NEW JERSEY">
+            <label for="s3">
+                <select class="button1" name="country" id="s3">
+                    <option value="1">ALL CITIES</option>
+                </select>
+            </label>
+            <br>
+        </div>
+        <div style="text-align: center;margin-top: 30px;">
+            <input type="button" class="active" value="Select destination to continue" id="b5" style="background-color: transparent; height: 30px;border: 1px solid black;cursor: pointer;">
+        </div>
+    </p>
+    <div style="background-color: lightgrey;height:max-content;margin-top: 60px; padding-bottom:30px;">
+        <table class="table4">
+            <tr>
+                <td>
+                    DEALS FROM<BR><span style="font-size: 60px;">$69</span><BR>ONE WAY
+                </td>
+                <td>
+                    <span style="font-size: 50px;">3X</span> <BR><span style="font-size: 25px;"> POINTS</span>
+                </td>
+                <TD>
+                    <span style="font-size: 50px;">50% <BR>OFF</span>
+                </TD>
+            </tr>
+        </table>
+        <table class="table5">
+            <tr>
+                <td>
+                    Fly from $69 one way with<br>WiFi,live TV, and more.<br><span style="font-size: 8.5px;color:grey;">Restrictions apply</span>
+                    <br><br><input style="background-color: transparent;cursor: pointer;" type="button" value="Grab a seat" id="b6">
+                </td>
+                <td>
+                    Rack up triple points for all<br>First Class Flights.<br><span style="font-size: 8.5px;color:grey;">Restrictions apply</span>
+                    <br><br><input style="background-color: transparent;cursor: pointer;" type="button" value="Learn more" id="b7">
+                </td>
+                <td>
+                    Fly First Class or Main Cabin<br>Select this holiday.<br><span style="font-size: 8.5px;color:grey;">Restrictions apply</span>
+                    <br><br><input style="background-color: transparent;cursor: pointer;" type="button" value="Book now" id="b8">
+                </td>
+            </tr>
+        </table>
+    </div>
+</html>
